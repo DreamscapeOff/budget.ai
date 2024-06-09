@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>budget.ai [Powered by Dreamxscape]</title>
+  <link rel="stylesheet" href="main.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="assets/photos/favicon-1.png">
+</head>
+
+<body>
+  <div class="loader">
+    <img src="assets/photos/loading-1.png" alt="Loading...">
+  </div>
+
+  <header>
+    <nav>
+      <div class="container">
+        <div class="logos">
+          <div onclick="window.open('index.html', '_self');" id="logo">budget.ai</div>
+          <div id="watermark">powered by Dreamxscape Industries</div>
+        </div>
+        <ul>
+          <li><a id="nav-btn1" onclick="window.open('our_process.html', '_self');">Our Process</a></li>
+          <li><a id="nav-btn2" onclick="window.open('about.html', '_self');">Learn More</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <canvas class="object1"></canvas>
+    <style>
+      .object1 {
+        z-index: 0;
+        opacity: 100;
+
+        position: absolute;
+
+        top: 50%;
+        left: 50%;
+        transform: translate(0%, -50%);
+
+        max-width: calc(50vw);
+        max-height: calc(50vh);
+        /* Limit the maximum width */
+        height: auto;
+        /* Maintain aspect ratio */
+      }
+    </style>
+    <div class="container">
+      <audio src="assets/audio/mouse-click-117076.mp3" id="animated-description-sound"></audio>
+      <h1 id="hero-header"></h1>
+      <button id="hero-btn">Unvault Now.</button>
+    </div>
+  </section>
+
+  <section>
+    <div class="ai-information-container">
+      <div class="information-section" id="section1">
+        <h2>Innovative Solutions</h2>
+        <p>
+          Our advanced bot has undergone rigorous training to ensure the production of premium-quality products for all
+          our consumers. Its programs have been meticulously tested against the most stringent standards, consistently
+          delivering outstanding performance in the majority of its evaluations.
+        </p>
+        <img class="information-image" src="assets/photos/information-1.jpeg">
+      </div>
+      <div class="information-section" id="section2">
+        <h2>Efficiency and Savings</h2>
+        <p>
+          Our existing customers have saved over 40% of their income that would typically be spent on unnecessary items.
+          Based on our findings, this tool helps you maintain a healthy lifestyle, enabling you to provide the life
+          you've always wanted for your family and friends.
+        </p>
+        <img class="information-image" src="assets/photos/information-2.jpeg">
+      </div>
+      <div class="information-section" id="section3">
+        <h2>User-Friendly Experience</h2>
+        <p>
+          Our team has developed a straightforward and effective method for accomplishing tasks with the help of our
+          advanced AI model. Despite its sophistication, our services are designed to be user-friendly, ensuring that
+          you can easily get started without encountering any difficulties. We have minimized the learning curve to
+          enhance your productivity and efficiency.
+        </p>
+        <img class="information-image" src="assets/photos/information-3.jpeg">
+      </div>
+
+      <a class="information-btn"><span onclick="window.open('about.html', '_self');">Learn More</span></a>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/104/three.js"></script>
+  <script src="Backend/orbitcontrols.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script type="module" src="Backend/model.js"></script>
+  <script type="module" src="Backend/misc.js"></script>
+  <script type="module" src="Backend/cosemetics.js"></script>
+</body>
+
+</html>
